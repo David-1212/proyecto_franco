@@ -1,0 +1,15 @@
+version: '3.4'
+services:
+  webmvc:
+    image: vargas2000/login-api
+    ports:
+      - "3000:3000"
+    depends_on:
+      - api-api
+  api:
+    image: vargas2000/api-api
+    ports:
+      - "4000:4000"
+
+  
+
